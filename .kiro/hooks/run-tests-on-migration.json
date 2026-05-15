@@ -1,0 +1,13 @@
+{
+  "name": "Run Parity Tests After Migration",
+  "version": "1.0.0",
+  "description": "Automatically runs behavioral parity tests whenever a migrated service file is edited, ensuring no regression in business logic",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["migrated-nodejs/src/**/*.js"]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "cd migrated-nodejs && npm test -- --forceExit"
+  }
+}
