@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Auto PR on Task Complete",
+  "description": "After the agent stops working, automatically pushes changes to a feature branch and creates a pull request on GitHub using MCP tools.",
+  "version": "1",
+  "when": {
+    "type": "agentStop"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "The implementation is complete. Now push the changes to GitHub repo Tosha-8/migrate-perl-to-noje.js using the GitHub MCP tools. Steps: 1) Create a new branch from main with a descriptive name based on what was just implemented (e.g. feat/jwt-authentication). 2) Read all changed/new files in the workspace (respect .gitignore: exclude node_modules/, coverage/, .DS_Store, docs/). 3) Push the files using mcp_github_push_files. 4) Create a PR to main with a clear title and description summarizing the changes. Owner: Tosha-8, Repo: migrate-perl-to-noje.js."
+  }
+}
