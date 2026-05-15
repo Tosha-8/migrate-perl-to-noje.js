@@ -1,6 +1,6 @@
-# Perl to Node.js Migration — Trade India Order Service
+# Perl to Node.js Migration — AnyCompany Order Service
 
-This project demonstrates a migration of a legacy Perl CGI application to a modern Node.js/Express service for the Trade India marketplace.
+This project demonstrates a migration of a legacy Perl CGI application to a modern Node.js/Express service for the AnyCompany marketplace.
 
 ## Project Structure
 
